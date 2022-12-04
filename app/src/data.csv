@@ -1,0 +1,643 @@
+senators,stocks,buy/sell,date
+John Hickenlooper,BATRK,sold,2022-11-14
+John Hickenlooper,BATRK,bought,2022-11-14
+John Hickenlooper,LBRDA,sold,2022-11-14
+John Hickenlooper,LBRDA,bought,2022-11-14
+John Hickenlooper,BATRA,sold,2022-11-14
+John Hickenlooper,BATRA,bought,2022-11-14
+John Hickenlooper,BATRK,sold,2022-11-14
+John Hickenlooper,BATRK,bought,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Shelley Capito,UNH,sold,2022-11-14
+Shelley Capito,JPM,sold,2022-11-14
+Shelley Capito,MSFT,sold,2022-11-14
+Shelley Capito,LOW,sold,2022-11-14
+Shelley Capito,LIN,sold,2022-11-14
+Shelley Capito,JNJ,sold,2022-11-14
+Shelley Capito,BLK,sold,2022-11-14
+Shelley Capito,AAPL,sold,2022-11-14
+Shelley Capito,AFL,sold,2022-11-14
+Shelley Capito,WFC,sold,2022-11-14
+Shelley Capito,UNH,sold,2022-11-14
+Shelley Capito,JPM,sold,2022-11-14
+Shelley Capito,MSFT,sold,2022-11-14
+Shelley Capito,LOW,sold,2022-11-14
+Shelley Capito,LIN,sold,2022-11-14
+Shelley Capito,JNJ,sold,2022-11-14
+Shelley Capito,BLK,sold,2022-11-14
+Shelley Capito,AAPL,sold,2022-11-14
+Shelley Capito,AFL,sold,2022-11-14
+Shelley Capito,WFC,sold,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,CLF,bought,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,MSFT,bought,2022-11-14
+Tommy Tuberville,NU,bought,2022-11-14
+Tommy Tuberville,MSFT,bought,2022-11-14
+Tommy Tuberville,NU,bought,2022-11-14
+Tommy Tuberville,XOM,sold,2022-11-14
+Tommy Tuberville,CVX,sold,2022-11-14
+Tommy Tuberville,X,sold,2022-11-14
+Tommy Tuberville,X,sold,2022-11-14
+Tommy Tuberville,NU,bought,2022-11-14
+Tommy Tuberville,VCTR,bought,2022-11-14
+Tommy Tuberville,VCTR,bought,2022-11-14
+Tommy Tuberville,VCTR,bought,2022-11-14
+Tommy Tuberville,VRTX,bought,2022-11-14
+Tommy Tuberville,TREX,bought,2022-11-14
+Tommy Tuberville,SCI,bought,2022-11-14
+Tommy Tuberville,RELX,bought,2022-11-14
+Tommy Tuberville,RH,bought,2022-11-14
+Tommy Tuberville,PHM,bought,2022-11-14
+Tommy Tuberville,PAYC,bought,2022-11-14
+Tommy Tuberville,GIS,bought,2022-11-14
+Tommy Tuberville,GLPI,bought,2022-11-14
+Tommy Tuberville,RACE,bought,2022-11-14
+Tommy Tuberville,XOM,bought,2022-11-14
+Tommy Tuberville,EXR,bought,2022-11-14
+Tommy Tuberville,ETSY,bought,2022-11-14
+Tommy Tuberville,ELS,bought,2022-11-14
+Tommy Tuberville,DQ,bought,2022-11-14
+Tommy Tuberville,CROX,bought,2022-11-14
+Tommy Tuberville,CSCO,bought,2022-11-14
+Tommy Tuberville,AMGN,bought,2022-11-14
+Tommy Tuberville,AMT,bought,2022-11-14
+Tommy Tuberville,ZTS,sold,2022-11-14
+Tommy Tuberville,WIT,sold,2022-11-14
+Tommy Tuberville,SEIC,sold,2022-11-14
+Tommy Tuberville,RMD,sold,2022-11-14
+,,sold,2022-11-14
+Tommy Tuberville,,sold,2022-11-14
+Tommy Tuberville,NOC,sold,2022-11-14
+Tommy Tuberville,NVDA,sold,2022-11-14
+Tommy Tuberville,MNST,sold,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,MASI,sold,2022-11-14
+Tommy Tuberville,MKTX,sold,2022-11-14
+Tommy Tuberville,IDXX,sold,2022-11-14
+Tommy Tuberville,HON,sold,2022-11-14
+Tommy Tuberville,GGG,sold,2022-11-14
+Tommy Tuberville,IT,sold,2022-11-14
+Tommy Tuberville,GRMN,sold,2022-11-14
+Tommy Tuberville,FAST,sold,2022-11-14
+Tommy Tuberville,EL,sold,2022-11-14
+Tommy Tuberville,DHI,sold,2022-11-14
+Tommy Tuberville,CHD,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,AMAT,sold,2022-11-14
+Tommy Tuberville,ALGN,sold,2022-11-14
+Tommy Tuberville,APD,sold,2022-11-14
+Tommy Tuberville,MRO,sold,2022-11-14
+Tommy Tuberville,OXY,sold,2022-11-14
+Tommy Tuberville,OXY,sold,2022-11-14
+Tommy Tuberville,OXY,sold,2022-11-14
+Tommy Tuberville,OXY,bought,2022-11-14
+Tommy Tuberville,Bond,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,FDX,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Thomas Carper,INVALID STOCK,bought,2022-11-14
+Thomas Carper,BMN,bought,2022-11-14
+Thomas Carper,MBXIX,bought,2022-11-14
+Thomas Carper,GSMYX,sold,2022-11-14
+Thomas Carper,SBPYX,bought,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+Thomas Carper,FCPIX,sold,2022-11-14
+Thomas Carper,VZ,sold,2022-11-14
+Thomas Carper,CVS,bought,2022-11-14
+Thomas Carper,DLR,sold,2022-11-14
+Thomas Carper,TSM,bought,2022-11-14
+Thomas Carper,MPW,bought,2022-11-14
+Thomas Carper,SRVR,sold,2022-11-14
+Thomas Carper,LDP,sold,2022-11-14
+Thomas Carper,EFAD,bought,2022-11-14
+Thomas Carper,GMRE,sold,2022-11-14
+Thomas Carper,JHEM,bought,2022-11-14
+Thomas Carper,ABT,bought,2022-11-14
+Thomas Carper,DIS,sold,2022-11-14
+Thomas Carper,INTC,sold,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,PSQ,sold,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,PSQ,sold,2022-11-14
+Thomas Carper,PSQ,sold,2022-11-14
+Thomas Carper,SH,sold,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,PSQ,sold,2022-11-14
+Thomas Carper,HQL,sold,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+Thomas Carper,NID,sold,2022-11-14
+Thomas Carper,SBIO,sold,2022-11-14
+Dan Sullivan,INVALID STOCK,sold,2022-11-14
+Dan Sullivan,FIVE,sold,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Michael Bennet,INVALID STOCK,bought,2022-11-14
+Tina Smith,AORT,bought,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,X,sold,2022-11-14
+Tommy Tuberville,X,bought,2022-11-14
+Tommy Tuberville,MSFT,bought,2022-11-14
+Tommy Tuberville,ARKK,bought,2022-11-14
+Tommy Tuberville,F,sold,2022-11-14
+Tommy Tuberville,F,bought,2022-11-14
+Tommy Tuberville,F,bought,2022-11-14
+Tommy Tuberville,ECOM,sold,2022-11-14
+Tommy Tuberville,ARKK,bought,2022-11-14
+Tommy Tuberville,NU,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Thomas Carper,SH,sold,2022-11-14
+Thomas Carper,SH,sold,2022-11-14
+Thomas Carper,SH,sold,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+Thomas Carper,SQM,sold,2022-11-14
+Mitch McConnell,WFC,bought,2022-11-14
+Susan Collins,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,IVV,sold,2022-11-14
+Tommy Tuberville,EFAV,sold,2022-11-14
+Tommy Tuberville,XLY,sold,2022-11-14
+Tommy Tuberville,VTRS,sold,2022-11-14
+Tommy Tuberville,Bond,bought,2022-11-14
+Tommy Tuberville,RSP,bought,2022-11-14
+Tommy Tuberville,IDV,bought,2022-11-14
+Tommy Tuberville,DHS,bought,2022-11-14
+Tommy Tuberville,Bond,sold,2022-11-14
+Tommy Tuberville,Bond,sold,2022-11-14
+Tommy Tuberville,ORCL,sold,2022-11-14
+Tommy Tuberville,XLC,sold,2022-11-14
+Tommy Tuberville,TSCO,sold,2022-11-14
+Tommy Tuberville,Bond,bought,2022-11-14
+Tommy Tuberville,OC,bought,2022-11-14
+Tommy Tuberville,SSYS,sold,2022-11-14
+Tommy Tuberville,ARKK,bought,2022-11-14
+Tommy Tuberville,MRO,bought,2022-11-14
+Tommy Tuberville,X,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INTC,bought,2022-11-14
+Tommy Tuberville,INTC,bought,2022-11-14
+Tommy Tuberville,CLF,sold,2022-11-14
+Tommy Tuberville,PYPL,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Thomas Carper,SQM,bought,2022-11-14
+Thomas Carper,FAST,sold,2022-11-14
+Thomas Carper,MBXIX,bought,2022-11-14
+Thomas Carper,Bond,bought,2022-11-14
+Thomas Carper,GSIMX,bought,2022-11-14
+Thomas Carper,GSMYX,sold,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+Thomas Carper,FCPIX,sold,2022-11-14
+Thomas Carper,IJS,sold,2022-11-14
+Thomas Carper,JHMM,bought,2022-11-14
+Thomas Carper,WIW,sold,2022-11-14
+Thomas Carper,IVV,sold,2022-11-14
+Thomas Carper,LGI,sold,2022-11-14
+Thomas Carper,KRE,sold,2022-11-14
+Thomas Carper,CDL,bought,2022-11-14
+Thomas Carper,CFA,sold,2022-11-14
+Thomas Carper,PRF,bought,2022-11-14
+Thomas Carper,EELV,bought,2022-11-14
+Thomas Carper,SPGP,bought,2022-11-14
+Thomas Carper,SRVR,sold,2022-11-14
+Thomas Carper,CEF,sold,2022-11-14
+Thomas Carper,GLD,sold,2022-11-14
+Thomas Carper,GNR,sold,2022-11-14
+Thomas Carper,CIBR,sold,2022-11-14
+Thomas Carper,LDP,sold,2022-11-14
+Thomas Carper,QTEC,sold,2022-11-14
+Thomas Carper,GDXJ,sold,2022-11-14
+Thomas Carper,MOO,sold,2022-11-14
+Thomas Carper,GSSC,bought,2022-11-14
+Thomas Carper,SMDV,bought,2022-11-14
+Thomas Carper,DGRS,sold,2022-11-14
+Thomas Carper,FINX,sold,2022-11-14
+Thomas Carper,EFAD,bought,2022-11-14
+Thomas Carper,FDRR,bought,2022-11-14
+Thomas Carper,FQAL,bought,2022-11-14
+Thomas Carper,JHEM,bought,2022-11-14
+Thomas Carper,FIASX,sold,2022-11-14
+Bill Hagerty,BKEPP,sold,2022-11-14
+Gary Peters,HR,sold,2022-11-14
+John Hickenlooper,FWONK,sold,2022-11-14
+John Hickenlooper,FWONK,bought,2022-11-14
+Mark Warner,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,CLF,bought,2022-11-14
+Tommy Tuberville,ECOM,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Shelley Capito,GWW,bought,2022-11-14
+Shelley Capito,COST,bought,2022-11-14
+Deb Fischer,LMT,sold,2022-11-14
+Deb Fischer,KO,sold,2022-11-14
+Deb Fischer,CSCO,sold,2022-11-14
+Deb Fischer,CAT,sold,2022-11-14
+Shelley Capito,INTC,sold,2022-11-14
+Shelley Capito,F,sold,2022-11-14
+Shelley Capito,MMM,sold,2022-11-14
+Shelley Capito,MSFT,sold,2022-11-14
+Shelley Capito,IBM,sold,2022-11-14
+Shelley Capito,INTC,sold,2022-11-14
+Shelley Capito,KO,sold,2022-11-14
+Shelley Capito,BMY,sold,2022-11-14
+Dan Sullivan,RPM,sold,2022-11-14
+Lindsey Graham,VTIP,sold,2022-11-14
+Lindsey Graham,Bond,bought,2022-11-14
+Lindsey Graham,Bond,bought,2022-11-14
+Tommy Tuberville,BRK.B,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,PYPL,bought,2022-11-14
+Tommy Tuberville,QCOM,sold,2022-11-14
+Tommy Tuberville,QCOM,sold,2022-11-14
+Tommy Tuberville,X,sold,2022-11-14
+Tommy Tuberville,GOLD,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,GOLD,sold,2022-11-14
+Tommy Tuberville,X,bought,2022-11-14
+Tommy Tuberville,SSYS,bought,2022-11-14
+Tommy Tuberville,INTC,bought,2022-11-14
+Tommy Tuberville,SCCO,sold,2022-11-14
+Tommy Tuberville,PYPL,bought,2022-11-14
+Tommy Tuberville,EVT,sold,2022-11-14
+Tommy Tuberville,CVX,sold,2022-11-14
+Tommy Tuberville,QCOM,bought,2022-11-14
+Tommy Tuberville,PYPL,bought,2022-11-14
+Tommy Tuberville,NVDA,sold,2022-11-14
+Tommy Tuberville,PYPL,sold,2022-11-14
+Tommy Tuberville,PYPL,bought,2022-11-14
+Tommy Tuberville,QCOM,bought,2022-11-14
+Tommy Tuberville,NVDA,bought,2022-11-14
+Tommy Tuberville,SSYS,bought,2022-11-14
+Tommy Tuberville,SSYS,bought,2022-11-14
+Tommy Tuberville,INTC,bought,2022-11-14
+Tommy Tuberville,NVDA,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Bill Hagerty,INVALID STOCK,bought,2022-11-14
+Bill Hagerty,INVALID STOCK,bought,2022-11-14
+Bill Hagerty,INVALID STOCK,bought,2022-11-14
+Bill Hagerty,INVALID STOCK,bought,2022-11-14
+Thomas Carper,INVALID STOCK,bought,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+John Hickenlooper,BATRK,sold,2022-11-14
+John Hickenlooper,BATRK,bought,2022-11-14
+John Hickenlooper,LBRDA,sold,2022-11-14
+John Hickenlooper,LBRDA,bought,2022-11-14
+John Hickenlooper,BATRA,sold,2022-11-14
+John Hickenlooper,BATRA,bought,2022-11-14
+John Hickenlooper,BATRK,sold,2022-11-14
+John Hickenlooper,BATRK,bought,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,sold,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Shelley Capito,UNH,sold,2022-11-14
+Shelley Capito,JPM,sold,2022-11-14
+Shelley Capito,MSFT,sold,2022-11-14
+Shelley Capito,LOW,sold,2022-11-14
+Shelley Capito,LIN,sold,2022-11-14
+Shelley Capito,JNJ,sold,2022-11-14
+Shelley Capito,BLK,sold,2022-11-14
+Shelley Capito,AAPL,sold,2022-11-14
+Shelley Capito,AFL,sold,2022-11-14
+Shelley Capito,WFC,sold,2022-11-14
+Shelley Capito,UNH,sold,2022-11-14
+Shelley Capito,JPM,sold,2022-11-14
+Shelley Capito,MSFT,sold,2022-11-14
+Shelley Capito,LOW,sold,2022-11-14
+Shelley Capito,LIN,sold,2022-11-14
+Shelley Capito,JNJ,sold,2022-11-14
+Shelley Capito,BLK,sold,2022-11-14
+Shelley Capito,AAPL,sold,2022-11-14
+Shelley Capito,AFL,sold,2022-11-14
+Shelley Capito,WFC,sold,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,CLF,bought,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,MSFT,bought,2022-11-14
+Tommy Tuberville,NU,bought,2022-11-14
+Tommy Tuberville,MSFT,bought,2022-11-14
+Tommy Tuberville,NU,bought,2022-11-14
+Tommy Tuberville,XOM,sold,2022-11-14
+Tommy Tuberville,CVX,sold,2022-11-14
+Tommy Tuberville,X,sold,2022-11-14
+Tommy Tuberville,X,sold,2022-11-14
+Tommy Tuberville,NU,bought,2022-11-14
+Tommy Tuberville,VCTR,bought,2022-11-14
+Tommy Tuberville,VCTR,bought,2022-11-14
+Tommy Tuberville,VCTR,bought,2022-11-14
+Tommy Tuberville,VRTX,bought,2022-11-14
+Tommy Tuberville,TREX,bought,2022-11-14
+Tommy Tuberville,SCI,bought,2022-11-14
+Tommy Tuberville,RELX,bought,2022-11-14
+Tommy Tuberville,RH,bought,2022-11-14
+Tommy Tuberville,PHM,bought,2022-11-14
+Tommy Tuberville,PAYC,bought,2022-11-14
+Tommy Tuberville,GIS,bought,2022-11-14
+Tommy Tuberville,GLPI,bought,2022-11-14
+Tommy Tuberville,RACE,bought,2022-11-14
+Tommy Tuberville,XOM,bought,2022-11-14
+Tommy Tuberville,EXR,bought,2022-11-14
+Tommy Tuberville,ETSY,bought,2022-11-14
+Tommy Tuberville,ELS,bought,2022-11-14
+Tommy Tuberville,DQ,bought,2022-11-14
+Tommy Tuberville,CROX,bought,2022-11-14
+Tommy Tuberville,CSCO,bought,2022-11-14
+Tommy Tuberville,AMGN,bought,2022-11-14
+Tommy Tuberville,AMT,bought,2022-11-14
+Tommy Tuberville,ZTS,sold,2022-11-14
+Tommy Tuberville,WIT,sold,2022-11-14
+Tommy Tuberville,SEIC,sold,2022-11-14
+Tommy Tuberville,RMD,sold,2022-11-14
+,,sold,2022-11-14
+Tommy Tuberville,,sold,2022-11-14
+Tommy Tuberville,NOC,sold,2022-11-14
+Tommy Tuberville,NVDA,sold,2022-11-14
+Tommy Tuberville,MNST,sold,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,MASI,sold,2022-11-14
+Tommy Tuberville,MKTX,sold,2022-11-14
+Tommy Tuberville,IDXX,sold,2022-11-14
+Tommy Tuberville,HON,sold,2022-11-14
+Tommy Tuberville,GGG,sold,2022-11-14
+Tommy Tuberville,IT,sold,2022-11-14
+Tommy Tuberville,GRMN,sold,2022-11-14
+Tommy Tuberville,FAST,sold,2022-11-14
+Tommy Tuberville,EL,sold,2022-11-14
+Tommy Tuberville,DHI,sold,2022-11-14
+Tommy Tuberville,CHD,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,AMAT,sold,2022-11-14
+Tommy Tuberville,ALGN,sold,2022-11-14
+Tommy Tuberville,APD,sold,2022-11-14
+Tommy Tuberville,MRO,sold,2022-11-14
+Tommy Tuberville,OXY,sold,2022-11-14
+Tommy Tuberville,OXY,sold,2022-11-14
+Tommy Tuberville,OXY,sold,2022-11-14
+Tommy Tuberville,OXY,bought,2022-11-14
+Tommy Tuberville,Bond,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,FDX,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Thomas Carper,INVALID STOCK,bought,2022-11-14
+Thomas Carper,BMN,bought,2022-11-14
+Thomas Carper,MBXIX,bought,2022-11-14
+Thomas Carper,GSMYX,sold,2022-11-14
+Thomas Carper,SBPYX,bought,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+Thomas Carper,FCPIX,sold,2022-11-14
+Thomas Carper,VZ,sold,2022-11-14
+Thomas Carper,CVS,bought,2022-11-14
+Thomas Carper,DLR,sold,2022-11-14
+Thomas Carper,TSM,bought,2022-11-14
+Thomas Carper,MPW,bought,2022-11-14
+Thomas Carper,SRVR,sold,2022-11-14
+Thomas Carper,LDP,sold,2022-11-14
+Thomas Carper,EFAD,bought,2022-11-14
+Thomas Carper,GMRE,sold,2022-11-14
+Thomas Carper,JHEM,bought,2022-11-14
+Thomas Carper,ABT,bought,2022-11-14
+Thomas Carper,DIS,sold,2022-11-14
+Thomas Carper,INTC,sold,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,PSQ,sold,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,PSQ,sold,2022-11-14
+Thomas Carper,PSQ,sold,2022-11-14
+Thomas Carper,SH,sold,2022-11-14
+Thomas Carper,HDGE,bought,2022-11-14
+Thomas Carper,PSQ,sold,2022-11-14
+Thomas Carper,HQL,sold,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+Thomas Carper,NID,sold,2022-11-14
+Thomas Carper,SBIO,sold,2022-11-14
+Dan Sullivan,INVALID STOCK,sold,2022-11-14
+Dan Sullivan,FIVE,sold,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Michael Bennet,INVALID STOCK,bought,2022-11-14
+Tina Smith,AORT,bought,2022-11-14
+Tommy Tuberville,MSFT,sold,2022-11-14
+Tommy Tuberville,X,sold,2022-11-14
+Tommy Tuberville,X,bought,2022-11-14
+Tommy Tuberville,MSFT,bought,2022-11-14
+Tommy Tuberville,ARKK,bought,2022-11-14
+Tommy Tuberville,F,sold,2022-11-14
+Tommy Tuberville,F,bought,2022-11-14
+Tommy Tuberville,F,bought,2022-11-14
+Tommy Tuberville,ECOM,sold,2022-11-14
+Tommy Tuberville,ARKK,bought,2022-11-14
+Tommy Tuberville,NU,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Thomas Carper,SH,sold,2022-11-14
+Thomas Carper,SH,sold,2022-11-14
+Thomas Carper,SH,sold,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+Thomas Carper,SQM,sold,2022-11-14
+Mitch McConnell,WFC,bought,2022-11-14
+Susan Collins,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,IVV,sold,2022-11-14
+Tommy Tuberville,EFAV,sold,2022-11-14
+Tommy Tuberville,XLY,sold,2022-11-14
+Tommy Tuberville,VTRS,sold,2022-11-14
+Tommy Tuberville,Bond,bought,2022-11-14
+Tommy Tuberville,RSP,bought,2022-11-14
+Tommy Tuberville,IDV,bought,2022-11-14
+Tommy Tuberville,DHS,bought,2022-11-14
+Tommy Tuberville,Bond,sold,2022-11-14
+Tommy Tuberville,Bond,sold,2022-11-14
+Tommy Tuberville,ORCL,sold,2022-11-14
+Tommy Tuberville,XLC,sold,2022-11-14
+Tommy Tuberville,TSCO,sold,2022-11-14
+Tommy Tuberville,Bond,bought,2022-11-14
+Tommy Tuberville,OC,bought,2022-11-14
+Tommy Tuberville,SSYS,sold,2022-11-14
+Tommy Tuberville,ARKK,bought,2022-11-14
+Tommy Tuberville,MRO,bought,2022-11-14
+Tommy Tuberville,X,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INTC,bought,2022-11-14
+Tommy Tuberville,INTC,bought,2022-11-14
+Tommy Tuberville,CLF,sold,2022-11-14
+Tommy Tuberville,PYPL,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Thomas Carper,SQM,bought,2022-11-14
+Thomas Carper,FAST,sold,2022-11-14
+Thomas Carper,MBXIX,bought,2022-11-14
+Thomas Carper,Bond,bought,2022-11-14
+Thomas Carper,GSIMX,bought,2022-11-14
+Thomas Carper,GSMYX,sold,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
+Thomas Carper,FCPIX,sold,2022-11-14
+Thomas Carper,IJS,sold,2022-11-14
+Thomas Carper,JHMM,bought,2022-11-14
+Thomas Carper,WIW,sold,2022-11-14
+Thomas Carper,IVV,sold,2022-11-14
+Thomas Carper,LGI,sold,2022-11-14
+Thomas Carper,KRE,sold,2022-11-14
+Thomas Carper,CDL,bought,2022-11-14
+Thomas Carper,CFA,sold,2022-11-14
+Thomas Carper,PRF,bought,2022-11-14
+Thomas Carper,EELV,bought,2022-11-14
+Thomas Carper,SPGP,bought,2022-11-14
+Thomas Carper,SRVR,sold,2022-11-14
+Thomas Carper,CEF,sold,2022-11-14
+Thomas Carper,GLD,sold,2022-11-14
+Thomas Carper,GNR,sold,2022-11-14
+Thomas Carper,CIBR,sold,2022-11-14
+Thomas Carper,LDP,sold,2022-11-14
+Thomas Carper,QTEC,sold,2022-11-14
+Thomas Carper,GDXJ,sold,2022-11-14
+Thomas Carper,MOO,sold,2022-11-14
+Thomas Carper,GSSC,bought,2022-11-14
+Thomas Carper,SMDV,bought,2022-11-14
+Thomas Carper,DGRS,sold,2022-11-14
+Thomas Carper,FINX,sold,2022-11-14
+Thomas Carper,EFAD,bought,2022-11-14
+Thomas Carper,FDRR,bought,2022-11-14
+Thomas Carper,FQAL,bought,2022-11-14
+Thomas Carper,JHEM,bought,2022-11-14
+Thomas Carper,FIASX,sold,2022-11-14
+Bill Hagerty,BKEPP,sold,2022-11-14
+Gary Peters,HR,sold,2022-11-14
+John Hickenlooper,FWONK,sold,2022-11-14
+John Hickenlooper,FWONK,bought,2022-11-14
+Mark Warner,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,CLF,bought,2022-11-14
+Tommy Tuberville,ECOM,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Rick Scott,Bond,bought,2022-11-14
+Shelley Capito,GWW,bought,2022-11-14
+Shelley Capito,COST,bought,2022-11-14
+Deb Fischer,LMT,sold,2022-11-14
+Deb Fischer,KO,sold,2022-11-14
+Deb Fischer,CSCO,sold,2022-11-14
+Deb Fischer,CAT,sold,2022-11-14
+Shelley Capito,INTC,sold,2022-11-14
+Shelley Capito,F,sold,2022-11-14
+Shelley Capito,MMM,sold,2022-11-14
+Shelley Capito,MSFT,sold,2022-11-14
+Shelley Capito,IBM,sold,2022-11-14
+Shelley Capito,INTC,sold,2022-11-14
+Shelley Capito,KO,sold,2022-11-14
+Shelley Capito,BMY,sold,2022-11-14
+Dan Sullivan,RPM,sold,2022-11-14
+Lindsey Graham,VTIP,sold,2022-11-14
+Lindsey Graham,Bond,bought,2022-11-14
+Lindsey Graham,Bond,bought,2022-11-14
+Tommy Tuberville,BRK.B,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,PYPL,bought,2022-11-14
+Tommy Tuberville,QCOM,sold,2022-11-14
+Tommy Tuberville,QCOM,sold,2022-11-14
+Tommy Tuberville,X,sold,2022-11-14
+Tommy Tuberville,GOLD,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,GOLD,sold,2022-11-14
+Tommy Tuberville,X,bought,2022-11-14
+Tommy Tuberville,SSYS,bought,2022-11-14
+Tommy Tuberville,INTC,bought,2022-11-14
+Tommy Tuberville,SCCO,sold,2022-11-14
+Tommy Tuberville,PYPL,bought,2022-11-14
+Tommy Tuberville,EVT,sold,2022-11-14
+Tommy Tuberville,CVX,sold,2022-11-14
+Tommy Tuberville,QCOM,bought,2022-11-14
+Tommy Tuberville,PYPL,bought,2022-11-14
+Tommy Tuberville,NVDA,sold,2022-11-14
+Tommy Tuberville,PYPL,sold,2022-11-14
+Tommy Tuberville,PYPL,bought,2022-11-14
+Tommy Tuberville,QCOM,bought,2022-11-14
+Tommy Tuberville,NVDA,bought,2022-11-14
+Tommy Tuberville,SSYS,bought,2022-11-14
+Tommy Tuberville,SSYS,bought,2022-11-14
+Tommy Tuberville,INTC,bought,2022-11-14
+Tommy Tuberville,NVDA,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,bought,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Tommy Tuberville,INVALID STOCK,sold,2022-11-14
+Bill Hagerty,INVALID STOCK,bought,2022-11-14
+Bill Hagerty,INVALID STOCK,bought,2022-11-14
+Bill Hagerty,INVALID STOCK,bought,2022-11-14
+Bill Hagerty,INVALID STOCK,bought,2022-11-14
+Thomas Carper,INVALID STOCK,bought,2022-11-14
+Thomas Carper,INVALID STOCK,sold,2022-11-14
