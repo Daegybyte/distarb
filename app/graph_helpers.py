@@ -2,6 +2,8 @@ import pendulum
 import alignment_helpers as alignment
 import yfinance as yf
 import logging
+import pyqtgraph as pg
+
 
 class Graph_Helpers():
     def __init__(self, window):

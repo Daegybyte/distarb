@@ -15,11 +15,12 @@ Wine -- to celebrate the good days.
 Whiskey -- when wine just isn't enough.
 
 Special thanks to:
-Ben Jones, my advisor, for always being available to answer questions.
+Ben, my advisor, for always being available to answer questions.
 Dav for giving me an apprectiation for the wonders of Python, by making me learn C++.
 Varun for taking the time to explain for loops to me when I was feeling particularly overwhelmed early on.
 Matthew for teaching me how to use git and how to test my code.
 My mum for all the support and encouragement.
+Doc for being my fuzzy lil' coding buddy.
 """
 
 from PyQt5 import QtWidgets, QtCore
@@ -35,7 +36,7 @@ import pandas as pd
 from pathlib import Path
 import pyqtgraph as pg
 import time
-   
+import os
 
 # This is class for the main window of the app, it contains the GUI elements as well as the logic for user interaction
 class UI_MainWindow(object):       
@@ -47,6 +48,9 @@ class UI_MainWindow(object):
         DROPDOWN_ITEMS = TICKERS
         self.CLEAN_COMPANIES = alignment.Helpers.get_CLEAN_COMPANIES()
         self.count = 0
+        # instantiate pg
+        pg.setConfigOption('background', "black")
+
         
         ######################### START GUI SETUP #####################################
         # main window
@@ -72,6 +76,7 @@ class UI_MainWindow(object):
         self.graph_widget.setGeometry(QtCore.QRect(0, 1, 551, 495))
         self.graph_widget.setAutoFillBackground(False)
         self.graph_widget.setStyleSheet("background-color: lightgrey;")
+       
         
         # create a frame for the search box, the search button, and the ticker list
         self.search_box_groupBox = QtWidgets.QGroupBox(self.centralwidget)
@@ -256,9 +261,16 @@ class UI_MainWindow(object):
             self.output_box.clear()             
             graph.Graph_Helpers.reset_graph(self)
             
-            # get the path to thhe htm
+            
             base_path = Path(__file__).parent
             file_path = (base_path / "src/sec_filing.html").resolve()
+            
+            # # if file does not exist, create it
+            # if not os.path.exists(file_path):
+            #     with open(file_path, 'w') as f:
+            #         f.write("")
+            
+
             with open (file_path, "r") as f:
                 html = str(f.readlines())
 

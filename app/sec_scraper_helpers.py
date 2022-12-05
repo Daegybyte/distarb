@@ -1,8 +1,11 @@
 import urllib.request
 from pathlib import Path
+import pyqtgraph as pg
+
 
 # This class contains functions that scrape the SEC website and parse through the data
 class SEC_Scraper_Helpers():
+
     def get_html():
         html = ""
         tmp = ""
@@ -17,7 +20,11 @@ class SEC_Scraper_Helpers():
         # save html to file
         base_path = Path(__file__).parent
         file_path = (base_path / "src/sec_filing.html").resolve()
+        print(f"\nfile path: {file_path}")
+
+
         with open( file_path, 'w' ) as f:
+            print( f"\nwriting HTML" )
             f.write(html)
      
     # blocks the sec website into usable data. They only use rows and senator data takes up two rows that are not labeled. 
