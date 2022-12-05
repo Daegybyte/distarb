@@ -23,7 +23,8 @@ In the program window, select the radio button for what functionality you are in
 ### Why doesn't this work?
 
 
-#### In the event the executable fails, try:
+#### In the event the executable fails:
+ try:
  
  - Right clicking the application and clicking run. This will circumvent Apple trying to protect you from unidentified developers.
 
@@ -31,13 +32,20 @@ In the program window, select the radio button for what functionality you are in
 
  - In your terminal, navigate to where you see '`distarb.app`' and run the script: 
  
- $`bash distarb.app/Contents/MacOS/distarb`
+ 		$bash distarb.app/Contents/MacOS/distarb
  
 It is worth noting that this may be necessary to get the webscraper to work.
  
  
-If the above fails and you are having environment issues, A `.yml` of the conda environement to run the application can be found [here](https://anaconda.org/daegybyte/distarb).
+#### If all of the above fails:
 
+1. Get [Anaconda] (https://anaconda.org/).
+
+2. A `.yml` of the conda environement to run the application can be found [here](https://anaconda.org/daegybyte/distarb).
+
+3. Download [Source Code Zip](https://github.com/Daegybyte/distarb/releases/tag/v1.1.1) from my repo.
+
+4. Follow [this walkthrough] (https://dschreij.github.io/how-to/package-anaconda-environments-as-apps) walkthrough to create your own exectuable. 
 
 ## Class diagram:
 
@@ -49,7 +57,7 @@ Please report all bugs to [@elonmusk](https://twitter.com/elonmusk/with_replies?
 
 ### Miscellaneous:
  
-No animals were harmed in the making of this program. However one particularly happy corgi did receive many treats fromt the treat jar on my desk. He is becoming a bit of a chunk as a result. 
+No animals were harmed in the making of this program. One particularly happy corgi named Doc received many treats from the treat jar on my desk. As a result, he is becoming a bit of a chunk. 
 
 
 #### Like keys on a keyboard, your turn signal is not that far from your fingers. Use it.
