@@ -3,7 +3,7 @@
 ## Distance Arbitrage aka Distarb
 
 ## Contents:
-* ### [distarb.app](https://github.com/UtahMSD/diegoPisciotta/releases/tag/1.1.0).
+* ### [distarb.app](https://github.com/Daegybyte/distarb/releases/tag/v1.1.1)
 	
 * ### paper
 
@@ -35,9 +35,6 @@
  - 
 
 If the above fails and you are having environment issues,  A `.yml` of the conda environement to run the application can be found [here](https://anaconda.org/daegybyte/distarb).
-
-If all else fails and you cannot get distarb to run at all, maybe consider a different field.
-
 
 ## Instructions:
 
