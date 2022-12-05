@@ -1,11 +1,14 @@
 import pandas as pd
 import clavier
 from pathlib import Path
+import os
 
 # This is a helper class used to generate the alignments of the ticker symbols
 class Helpers():
     base_path = Path(__file__).parent
     file_path = (base_path / "src/stock_list.csv").resolve()
+    # file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app/src/stock_list.csv'))
+    print(file_path)
     with open(file_path, "r") as f:
         df_tickers = pd.read_csv(f)
    

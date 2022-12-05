@@ -22,26 +22,20 @@ Matthew for teaching me how to use git and how to test my code.
 My mum for all the support and encouragement.
 """
 
-try:
-    from PyQt5 import QtWidgets, QtCore
-    from pyqtgraph import PlotWidget
-    import sys
-    import alignment_helpers as alignment
-    import graph_helpers as graph
-    import regex as re
-    import sec_scraper as scraper
-    from bs4 import BeautifulSoup as bs
-    import sec_scraper_helpers as scraper_helpers
-    import pandas as pd
-    from pathlib import Path
-    import pyqtgraph as pg
-    import time
+from PyQt5 import QtWidgets, QtCore
+from pyqtgraph import PlotWidget
+import sys
+import alignment_helpers as alignment
+import graph_helpers as graph
+import regex as re
+import sec_scraper as scraper
+from bs4 import BeautifulSoup as bs
+import sec_scraper_helpers as scraper_helpers
+import pandas as pd
+from pathlib import Path
+import pyqtgraph as pg
+import time
    
-
-except ImportError as e:
-    print("Error importing modules, please check that all dependencies are installed")
-    print(e)
-    sys.exit()
 
 # This is class for the main window of the app, it contains the GUI elements as well as the logic for user interaction
 class UI_MainWindow(object):       
@@ -322,10 +316,6 @@ class UI_MainWindow(object):
         if self.count == 10:
             self.call_bugs_bunny()  
     
-    @classmethod
-    def check_asset_type_is_stock(self, iloc, df: pd.DataFrame) -> bool:
-        if df.iloc[iloc]['stocks'] == 'Bond':
-            return False
         
     # split T into a list of strings and remove punctuation, numbers, and spaces
     def split_and_strip(self, T) -> list:
