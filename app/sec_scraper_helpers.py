@@ -1,5 +1,4 @@
 import urllib.request
-from bs4 import BeautifulSoup as bs
 from pathlib import Path
 
 # This class contains functions that scrape the SEC website and parse through the data
@@ -14,11 +13,11 @@ class SEC_Scraper_Helpers():
             tmp = response.read()
             html = tmp.decode( 'utf-8' )
             print(f"scraping {url}")
-            
+
         # save html to file
         base_path = Path(__file__).parent
         file_path = (base_path / "src/sec_filing.html").resolve()
-        with open( file_path, 'w' ) as f:
+        with open( file_path, 'w+' ) as f:
             f.write(html)
      
     # blocks the sec website into usable data. They only use rows and senator data takes up two rows that are not labeled. 

@@ -22,17 +22,26 @@ Matthew for teaching me how to use git and how to test my code.
 My mum for all the support and encouragement.
 """
 
-from PyQt5 import QtWidgets, QtCore
-from pyqtgraph import PlotWidget
-import sys
-import alignment_helpers as alignment
-import graph_helpers as graph
-import regex as re
-import sec_scraper as scraper
-from bs4 import BeautifulSoup as bs
-import sec_scraper_helpers as scraper_helpers
-import pandas as pd
-from pathlib import Path
+try:
+    from PyQt5 import QtWidgets, QtCore
+    from pyqtgraph import PlotWidget
+    import sys
+    import alignment_helpers as alignment
+    import graph_helpers as graph
+    import regex as re
+    import sec_scraper as scraper
+    from bs4 import BeautifulSoup as bs
+    import sec_scraper_helpers as scraper_helpers
+    import pandas as pd
+    from pathlib import Path
+    import pyqtgraph as pg
+    import time
+   
+
+except ImportError as e:
+    print("Error importing modules, please check that all dependencies are installed")
+    print(e)
+    sys.exit()
 
 # This is class for the main window of the app, it contains the GUI elements as well as the logic for user interaction
 class UI_MainWindow(object):       
@@ -276,11 +285,14 @@ class UI_MainWindow(object):
             df_CSV = pd.read_csv(file_path)
             df_CSV.reindex(columns=data.keys())
             
+            # sleep for .5 seconds to allow the csv to be written
+            time.sleep(.5)
+            
             # skip to the most recent stock transaction. Limited to 1 because the SEC filings are not always in chronological order and sometimes
             # back and forth buys and sells between the same stock based on stock options from the same senator.
             # not a lot of intersting info could easily be gleaned from additional data
-            iloc = 0
-            while df_CSV.iloc[iloc]['stocks'] == 'Bond' or df_CSV.iloc[iloc]['stocks'] == 'INVALID STOCK':
+            iloc = 0  
+            while df_CSV.iloc[iloc]['stocks'] == 'Invalid Stock' or df_CSV.iloc[iloc]['stocks'] == 'Bond' and iloc < len(df_CSV):
                 current_trade = df_CSV.iloc[iloc]
                 iloc += 1
             current_trade = df_CSV.iloc[iloc].values 
@@ -309,7 +321,12 @@ class UI_MainWindow(object):
         # on the 10th click, the easter egg is called. This should be enough times to not be annoying and pop up too often.
         if self.count == 10:
             self.call_bugs_bunny()  
-            
+    
+    @classmethod
+    def check_asset_type_is_stock(self, iloc, df: pd.DataFrame) -> bool:
+        if df.iloc[iloc]['stocks'] == 'Bond':
+            return False
+        
     # split T into a list of strings and remove punctuation, numbers, and spaces
     def split_and_strip(self, T) -> list:
         T = T.split()
