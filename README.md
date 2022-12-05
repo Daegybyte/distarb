@@ -61,7 +61,7 @@ Please report all bugs to [@elonmusk](https://twitter.com/elonmusk/with_replies?
 
 ### Miscellaneous:
  
-No animals were harmed in the making of this program. One particularly happy corgi named Doc received many treats from the treat jar on my desk. As a result, he is becoming a bit of a chunk. 
+No animals were harmed in the making of this program. However, one particularly happy corgi named Doc received heaps of treats from the treat jar on my desk. As a result, he is becoming a bit of a chunk. 
 
 
 #### Like keys on a keyboard, your turn signal is not that far from your fingers. Use it.
