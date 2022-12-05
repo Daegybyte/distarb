@@ -39,13 +39,17 @@ It is worth noting that this may be necessary to get the webscraper to work.
  
 #### If all of the above fails:
 
-1. Get [Anaconda] (https://anaconda.org/).
+1. Get [Anaconda](https://anaconda.org/).
 
 2. A `.yml` of the conda environement to run the application can be found [here](https://anaconda.org/daegybyte/distarb).
 
+	recreate the environment with:
+	
+		$conda env create --file distarb.yml
+
 3. Download [Source Code Zip](https://github.com/Daegybyte/distarb/releases/tag/v1.1.1) from my repo.
 
-4. Follow [this walkthrough] (https://dschreij.github.io/how-to/package-anaconda-environments-as-apps) walkthrough to create your own exectuable. 
+4. Follow [this walkthrough](https://dschreij.github.io/how-to/package-anaconda-environments-as-apps) walkthrough to create your own exectuable. 
 
 ## Class diagram:
 
