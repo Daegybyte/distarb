@@ -21,24 +21,25 @@ class Graph_Helpers():
                 
         
     def graph_it(window, ticker, company, i, date):
+        # window.graph_widget.setMouseEnabled(x=False, y=False)                          # make graph unadjustable
         print(f"ticker: {ticker}")
         if date is None:
             price_history = yf.Ticker(ticker).history( period='1y',                    # valid periods: 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max
                                                         interval='1wk', actions=False) # valid intervals: 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo 
-        else:
-            
-            # place a vertical line on the graph to show the date of the transaction
+        else: 
             t = Graph_Helpers.convert_date_to_epoch(date)
-            window.graph_widget.addLine(x=t, pen='b', name='Transaction Date')
+            window.graph_widget.addLine(x=t, pen='b', name='Transaction Date')                      # place a vertical line on the graph to show the date of the transaction
+
             date = Graph_Helpers.make_four_weeks_earier(date)                                       # make the date 4 weeks earlier to give the graph some context
             price_history = yf.Ticker(ticker).history(start=date, interval='1d', actions=False)
-        time_series = list(price_history['Open'])                                                   # get open price for each day
+        
+        opens = list(price_history['Open'])  # get open price for each day
         
         # normalise the data beyond 0-1 to keep stocks of different prices on the same graph
-        max_price = max(time_series)
-        min_price = min(time_series)
+        max_price = max(opens)
+        min_price = min(opens)
         try:
-            time_series = [(x-min_price)/(max_price-min_price) for x in time_series]
+            opens = [(x-min_price)/(max_price-min_price) for x in opens]
         except ZeroDivisionError:
             logging.error(f"ZeroDivisionError: {ticker}")
             print("ZeroDivisionError")
@@ -47,22 +48,24 @@ class Graph_Helpers():
         converted_dates = Graph_Helpers.convert_epoch_to_date(dt_list)                               # convert float timestamp to date string
         zipped = Graph_Helpers.zip_lists_to_dict(dt_list, converted_dates)                           # zip the dates and prices together into a dictionary
         
-        colour = Graph_Helpers.set_colour(i)
+        colour = Graph_Helpers.set_colour(i) # set the colour of the graph line
         print(f"colour: {i}\n type: {type(i)}")
         
-        plt = window.graph_widget.plot(dt_list, time_series, name=company, symbolSize=5, pen=colour, symbolBrush=colour, lineStyle='dashed')
+        # format the graph
+        plt = window.graph_widget.plot(dt_list, opens, name=company, symbolSize=5, pen=colour, symbolBrush=colour, lineStyle='dashed')
         window.graph_widget.setLabel('left', 'Normalised Price, 0-1')
         window.graph_widget.setLabel('bottom', 'Date', units='Date')
         window.graph_widget.setXRange(dt_list[0], dt_list[-1])
 
-        # set the x ticks to be three spaced dates
+        # set the ticks on the x axis to be the date
         try:
-            window.graph_widget.getAxis('bottom').setTicks([list(zipped.items())[4:-1:len(converted_dates)//3]])
+            window.graph_widget.getAxis('bottom').setTicks([list(zipped.items())[4:-1:len(converted_dates)//3]]) # start is adjusted to fit the graph window better
         except ValueError:
             window.output_box.appendPlainText(f"\nIt is likely that {ticker} is a side issuing of a stock. That is why one or more of the graph lines is not showing up, because the price data would be identical, but the privilieges i.e. voting rights would be different.")
             logging.error(f"ValueError: {ticker}")
             print("ValueError")
-        window.graph_widget.setYRange(min(time_series), max(time_series))
+        
+        window.graph_widget.setYRange(min(opens), max(opens))
         window.graph_widget.showGrid(x=True, y=True)
         
         print ("\nplotting...")

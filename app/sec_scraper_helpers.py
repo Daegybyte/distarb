@@ -115,7 +115,7 @@ class SEC_Scraper_Helpers():
         return var
 
     def get_asset_type(data) -> str:
-        type_ = ""
+        type_ = "" # type is a reserved word, so I had to use type_ instead
         if "Bond" in data:
             type_ = "Bond"
         elif SEC_Scraper_Helpers.is_stock(data):
@@ -141,7 +141,7 @@ class SEC_Scraper_Helpers():
         start = data.find("[") + 1
         end = data.find("]")
         data = data[start:end]
-        if len(data) > 7:
+        if len(data) > 7: # I don't think there are any stocks that are longer than 5 characters, but I had to make a choice here and this seemed reasonable
             data = "INVALID STOCK"
         return data
 

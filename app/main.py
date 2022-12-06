@@ -78,6 +78,8 @@ class UI_MainWindow(object):
         self.graph_widget.setGeometry(QtCore.QRect(0, 1, 551, 495))
         self.graph_widget.setAutoFillBackground(False)
         self.graph_widget.setStyleSheet("background-color: lightgrey;")
+        self.graph_widget.setMouseEnabled(x=False, y=False)         # make the graph unadjustable by the user
+
        
         
         # create a frame for the search box, the search button, and the ticker list
@@ -204,8 +206,8 @@ class UI_MainWindow(object):
     def do_it(self) -> None:
         if self.has_errors():
             return
-        if self.count == 2:
-            self.call_bugs_bunny()    
+        # if self.count == 2:
+        #     self.call_bugs_bunny()    
                    
         # LOGIC FOR ALIGN BUTTON SELECTED
         if self.btn_align.isChecked():
@@ -332,7 +334,6 @@ class UI_MainWindow(object):
         if self.count == 10:
             self.call_bugs_bunny()  
     
-        
     # split T into a list of strings and remove punctuation, numbers, and spaces
     def split_and_strip(self, T) -> list:
         T = T.split()
