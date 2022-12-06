@@ -152,6 +152,7 @@ test_msdscript
 .mov
 *.mov
 distance_arbitrage.drawio.png
-app_screen.png 
+app_screen.png
+*app_screen* 
 .docx
-
+*.docx
