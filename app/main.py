@@ -10,8 +10,8 @@ Urllib -- for web requests,
 Pendulum -- for date manipulation,
 Among other libraries for minor miscellaneous tasks, 
 Coffee -- just lots and lots of coffee for energy.
-Wine -- to cap off painful days of debugging.
-Wine -- to celebrate the good days.
+Wine -- to cap off rough days.
+Wine -- to cap off good days.
 Whiskey -- when wine just isn't enough.
 
 Special thanks to:
@@ -50,6 +50,8 @@ class UI_MainWindow(object):
         self.count = 0
         # instantiate pg
         pg.setConfigOption('background', "black")
+        self.base_path_html = Path(__file__).parent
+        self.file_path_html = (self.base_path_html / "src/sec_filing.html").resolve()
 
         
         ######################### START GUI SETUP #####################################
@@ -262,16 +264,16 @@ class UI_MainWindow(object):
             graph.Graph_Helpers.reset_graph(self)
             
             
-            base_path = Path(__file__).parent
-            file_path = (base_path / "src/sec_filing.html").resolve()
+            # base_path_html = Path(__file__).parent
+            # file_path_html = (base_path_html / "src/sec_filing.html").resolve()
             
-            # # if file does not exist, create it
-            # if not os.path.exists(file_path):
-            #     with open(file_path, 'w') as f:
-            #         f.write("")
+            # if file does not exist, create it
+            if not os.path.exists(self.base_path_html):
+                with open(self.file_path_html, 'w') as f:
+                    f.write("")
             
 
-            with open (file_path, "r") as f:
+            with open (self.file_path_html, "r") as f:
                 html = str(f.readlines())
 
             # parse the html
@@ -285,7 +287,9 @@ class UI_MainWindow(object):
             scraper_helpers.SEC_Scraper_Helpers.get_html()
             df = pd.DataFrame(data)
            
-            # get the scraped data from the the csv             
+            # get the scraped data from the the csv  
+            base_path = Path(__file__).parent
+           
             file_path = (base_path / "src/data.csv").resolve()
             df.to_csv(file_path, index=False)
             df_CSV = pd.read_csv(file_path)
