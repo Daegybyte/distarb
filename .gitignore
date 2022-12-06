@@ -151,4 +151,7 @@ test_msdscript
 *.zip
 .mov
 *.mov
+distance_arbitrage.drawio.png
+app_screen.png 
+.docx
 
