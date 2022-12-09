@@ -6,7 +6,7 @@
 
 ## Deliverables:
 	
-* ### [Paper #TODO](https://github.com/Daegybyte/distarb/tree/main/paper/)
+* ### [Paper](https://github.com/Daegybyte/distarb/tree/main/paper/)
 
 * ### [Presentation](https://youtu.be/1874lj_r0Ko)
 
