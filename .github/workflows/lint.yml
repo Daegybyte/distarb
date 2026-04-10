@@ -1,0 +1,37 @@
+name: Code Quality
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    env:
+      QT_QPA_PLATFORM: offscreen
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9.15"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install black ruff pytest
+
+      - name: Check formatting (black)
+        run: black --check app/
+
+      - name: Lint (ruff)
+        run: ruff check app/
+
+      - name: Run tests
+        run: pytest app/tests.py -v

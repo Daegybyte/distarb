@@ -1,20 +1,21 @@
 import urllib.request
 from pathlib import Path
-import pyqtgraph as pg
 
 
 # This class contains functions that scrape the SEC website and parse through the data
-class SEC_Scraper_Helpers():
-
+class SEC_Scraper_Helpers:
     def get_html():
         html = ""
         tmp = ""
         url = "https://sec.report/Senate-Stock-Disclosures"
         request = urllib.request.Request(url)
-        request.add_header("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582")
-        with urllib.request.urlopen( request ) as response:
+        request.add_header(
+            "User-Agent",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582",
+        )
+        with urllib.request.urlopen(request) as response:
             tmp = response.read()
-            html = tmp.decode( 'utf-8' )
+            html = tmp.decode("utf-8")
             print(f"scraping {url}")
 
         # save html to file
@@ -22,12 +23,11 @@ class SEC_Scraper_Helpers():
         file_path = (base_path / "src/sec_filing.html").resolve()
         print(f"\nfile path: {file_path}")
 
-
-        with open( file_path, 'w' ) as f:
-            print( f"\nwriting HTML" )
+        with open(file_path, "w") as f:
+            print("\nwriting HTML")
             f.write(html)
-     
-    # blocks the sec website into usable data. They only use rows and senator data takes up two rows that are not labeled. 
+
+    # blocks the sec website into usable data. They only use rows and senator data takes up two rows that are not labeled.
     # This results in something that visually is different,
     # but programatically requires forcing a difference.
     def parse_html(soup) -> list:
@@ -36,8 +36,10 @@ class SEC_Scraper_Helpers():
         row_num = 0
         combined_rows = []
         for tr in rows:
-            if(row_num%2 != 0):
-                combined_rows.append("ROW")                     # privide a split point for later, combining the two SEC rows
+            if row_num % 2 != 0:
+                combined_rows.append(
+                    "ROW"
+                )  # privide a split point for later, combining the two SEC rows
             for td in tr:
                 data = td.text
                 combined_rows.append(data)
@@ -46,9 +48,9 @@ class SEC_Scraper_Helpers():
         tmp = ""
         for row in combined_rows:
             tmp += str(row) + " "
-            
-        data = tmp.split("ROW") 
-        data = data[1:len(data)] # strip headers
+
+        data = tmp.split("ROW")
+        data = data[1 : len(data)]  # strip headers
         return data
 
     def get_senator(data) -> str:
@@ -57,24 +59,26 @@ class SEC_Scraper_Helpers():
         start = data.rfind("[") + 1
         end = data.rfind("]")
         data = data[start:end]
-        data = ''.join(c if c.isalpha() else ' ' for c in data)
+        data = "".join(c if c.isalpha() else " " for c in data)
         data = data.split()
-        if len(data) != 2:                                      # Mitch McConnell requires a special case due to his middle name
+        if (
+            len(data) != 2
+        ):  # Mitch McConnell requires a special case due to his middle name
             if len(data) == 4:
                 if "Mitch" in data[2]:
                     data[2] = "Mitch"
                     senator += data[2]
                     senator += " "
-                    senator += data[0] 
+                    senator += data[0]
             elif len(data) == 3:
                 senator += data[1]
                 senator += " "
-                senator += data[0]    
+                senator += data[0]
         else:
             senator += data[1]
             senator += " "
-            senator += data[0]    
-        
+            senator += data[0]
+
         return senator
 
     # returns buy or sell
@@ -115,7 +119,7 @@ class SEC_Scraper_Helpers():
         return var
 
     def get_asset_type(data) -> str:
-        type_ = "" # type is a reserved word, so I had to use type_ instead
+        type_ = ""  # type is a reserved word, so I had to use type_ instead
         if "Bond" in data:
             type_ = "Bond"
         elif SEC_Scraper_Helpers.is_stock(data):
@@ -141,7 +145,9 @@ class SEC_Scraper_Helpers():
         start = data.find("[") + 1
         end = data.find("]")
         data = data[start:end]
-        if len(data) > 7: # I don't think there are any stocks that are longer than 5 characters, but I had to make a choice here and this seemed reasonable
+        if (
+            len(data) > 7
+        ):  # I don't think there are any stocks that are longer than 5 characters, but I had to make a choice here and this seemed reasonable
             data = "INVALID STOCK"
         return data
 
@@ -163,6 +169,7 @@ class SEC_Scraper_Helpers():
     #     elif "hour" in unit:
     #         return time * 3_600
     #     else: return -1
-        
+
+
 if __name__ == "__main__":
     pass
