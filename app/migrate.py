@@ -10,7 +10,7 @@ import pandas as pd
 
 base_path = Path(__file__).parent
 csv_path = (base_path / "src/stock_list.csv").resolve()
-db_path = (base_path / "src/distarb.db").resolve()
+db_path = (base_path / "src/stocks.db").resolve()
 
 conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
