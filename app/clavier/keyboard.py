@@ -1,8 +1,8 @@
-from typing import Dict, Iterator, List, Tuple, Union
 import collections
 import itertools
 import operator
 import textwrap
+from typing import Dict, Iterator, List, Tuple, Union
 
 
 class Keyboard(collections.UserDict):
