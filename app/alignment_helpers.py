@@ -1,6 +1,6 @@
 from pathlib import Path
 
-import clavier_lib as clavier
+import clavier
 import pandas as pd
 
 
