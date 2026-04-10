@@ -156,3 +156,6 @@ app_screen.png
 *app_screen* 
 .docx
 *.docx
+*.spec
+**/__pycache__/
+**/*.pyc
