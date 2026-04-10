@@ -323,13 +323,18 @@ class UI_MainWindow(object):
             # back and forth buys and sells between the same stock based on stock options from the same senator.
             # not a lot of intersting info could easily be gleaned from additional data
             iloc = 0
-            while (
+            while iloc < len(df_CSV) and (
                 df_CSV.iloc[iloc]["stocks"] == "Invalid Stock"
                 or df_CSV.iloc[iloc]["stocks"] == "Bond"
-                and iloc < len(df_CSV)
             ):
-                current_trade = df_CSV.iloc[iloc]
                 iloc += 1
+
+            if iloc >= len(df_CSV):
+                self.error_boilerplate(
+                    "Error - SEC Data", "No valid stock transactions found in the scraped data."
+                )
+                return
+
             current_trade = df_CSV.iloc[iloc].values
             senator = current_trade[0]
             stock = current_trade[1]

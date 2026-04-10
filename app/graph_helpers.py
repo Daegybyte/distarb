@@ -41,6 +41,11 @@ class Graph_Helpers:
 
         opens = list(price_history["Open"])  # get open price for each day
 
+        # Guard against empty data (delisted or no data in range)
+        if not opens:
+            logging.warning(f"No price data available for {ticker}, skipping graph.")
+            return
+
         # normalise the data beyond 0-1 to keep stocks of different prices on the same graph
         max_price = max(opens)
         min_price = min(opens)
