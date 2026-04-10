@@ -37,9 +37,7 @@ class Graph_Helpers:
             date = Graph_Helpers.make_four_weeks_earier(
                 date
             )  # make the date 4 weeks earlier to give the graph some context
-            price_history = yf.Ticker(ticker).history(
-                start=date, interval="1d", actions=False
-            )
+            price_history = yf.Ticker(ticker).history(start=date, interval="1d", actions=False)
 
         opens = list(price_history["Open"])  # get open price for each day
 

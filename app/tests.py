@@ -70,15 +70,11 @@ class DA_Tests(unittest.TestCase):
         self.assertIsInstance(companies, list)
 
     def test_alignents_type_str(self):
-        alignments, _, is_business = alignment.Helpers.get_alignments(
-            self.REAL_TICKER, False
-        )
+        alignments, _, is_business = alignment.Helpers.get_alignments(self.REAL_TICKER, False)
         self.assertIsInstance(alignments, str)
 
     def test_len_alignments(self):
-        _, alignments, is_business = alignment.Helpers.get_alignments(
-            self.REAL_TICKER, False
-        )
+        _, alignments, is_business = alignment.Helpers.get_alignments(self.REAL_TICKER, False)
         self.assertTrue(alignments)
         self.assertIsInstance(alignments, str)
         self.assertEqual(len(alignments.splitlines()), 10)
@@ -92,9 +88,7 @@ class DA_Tests(unittest.TestCase):
         self.assertTrue(is_business)
 
     def test_alignments(self):
-        distances, tickers, is_business = alignment.Helpers.get_alignments(
-            self.REAL_TICKER, False
-        )
+        distances, tickers, is_business = alignment.Helpers.get_alignments(self.REAL_TICKER, False)
         # assert that the alignments are not empty
         self.assertTrue(tickers)
         # assert that the alignments are a string
@@ -115,9 +109,7 @@ class DA_Tests(unittest.TestCase):
         self.assertEqual(tickers.splitlines()[9], "aplt")
 
     def test_alignments_non_existent(self):
-        alignments, tickers, is_business = alignment.Helpers.get_alignments(
-            self.FAKE_TICKER, False
-        )
+        alignments, tickers, is_business = alignment.Helpers.get_alignments(self.FAKE_TICKER, False)
         # assert that the alignments are not empty
         self.assertTrue(tickers)
         # assert that the alignments are a string

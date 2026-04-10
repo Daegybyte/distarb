@@ -61,9 +61,7 @@ class SEC_Scraper_Helpers:
         data = data[start:end]
         data = "".join(c if c.isalpha() else " " for c in data)
         data = data.split()
-        if (
-            len(data) != 2
-        ):  # Mitch McConnell requires a special case due to his middle name
+        if len(data) != 2:  # Mitch McConnell requires a special case due to his middle name
             if len(data) == 4:
                 if "Mitch" in data[2]:
                     data[2] = "Mitch"
