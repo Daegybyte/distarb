@@ -128,6 +128,88 @@ class DA_Tests(unittest.TestCase):
         self.assertEqual(tickers.splitlines()[8], "vpv")
         self.assertEqual(tickers.splitlines()[9], "vc")
 
+    def test_csv_has_expected_columns(self):
+        expected = {"ticker_symbol", "company_name", "clean_companies", "tickers_lower"}
+        self.assertTrue(expected.issubset(set(self.df_tickers.columns)))
+
+    def test_csv_is_not_empty(self):
+        self.assertGreater(len(self.df_tickers), 0)
+
+    def test_tickers_and_companies_same_length(self):
+        self.assertEqual(len(self.TICKERS), len(self.COMPANIES))
+        self.assertEqual(len(self.TICKERS), len(self.CLEAN_COMPANIES))
+
+    def test_get_ticker_from_name(self):
+        # Agilent is the first row — known good value
+        ticker = alignment.Helpers.get_ticker_from_name("Agilent Technologies Inc. Common Stock")
+        self.assertEqual(ticker, "A")
+
+    def test_get_name_from_ticker(self):
+        company = alignment.Helpers.get_name_from_ticker("A")
+        self.assertEqual(company, "Agilent Technologies Inc. Common Stock")
+
+    def test_roundtrip_ticker_to_name_to_ticker(self):
+        original_ticker = "A"
+        name = alignment.Helpers.get_name_from_ticker(original_ticker)
+        recovered_ticker = alignment.Helpers.get_ticker_from_name(name)
+        self.assertEqual(original_ticker, recovered_ticker)
+
+    def test_get_clean_name(self):
+        clean = alignment.Helpers.get_clean_name("Agilent Technologies Inc. Common Stock")
+        self.assertEqual(clean, "agilenttechnologiesinccommonstock")
+
+    def test_get_ticker_from_clean_name(self):
+        ticker = alignment.Helpers.get_ticker_from_clean_name("agilenttechnologiesinccommonstock")
+        self.assertEqual(ticker, "A")
+
+    def test_get_company_from_clean_name(self):
+        company = alignment.Helpers.get_company_from_clean_name("agilenttechnologiesinccommonstock")
+        self.assertEqual(company, "Agilent Technologies Inc. Common Stock")
+
+    def test_alignment_returns_tuple_of_three(self):
+        result = alignment.Helpers.get_alignments(self.REAL_TICKER, False)
+        self.assertIsInstance(result, tuple)
+        self.assertEqual(len(result), 3)
+
+    def test_alignment_tickers_are_lowercase(self):
+        _, tickers, _ = alignment.Helpers.get_alignments(self.REAL_TICKER, False)
+        for ticker in tickers.splitlines():
+            self.assertEqual(ticker, ticker.lower())
+
+    def test_alignments_sorted_by_distance(self):
+        # First result should always be an exact match when searching a real ticker
+        _, tickers, _ = alignment.Helpers.get_alignments(self.REAL_TICKER, False)
+        self.assertEqual(tickers.splitlines()[0], self.REAL_TICKER)
+
+    def test_business_alignment_returns_list(self):
+        _, tickers, _ = alignment.Helpers.get_alignments("apple", True)
+        self.assertIsInstance(tickers, list)
+
+    def test_business_alignment_not_empty(self):
+        _, tickers, _ = alignment.Helpers.get_alignments("apple", True)
+        self.assertTrue(tickers)
+
+    def test_business_alignment_max_three_results(self):
+        _, tickers, _ = alignment.Helpers.get_alignments("apple", True)
+        self.assertLessEqual(len(tickers), 3)
+
+    def test_business_alignment_results_are_strings(self):
+        _, tickers, _ = alignment.Helpers.get_alignments("apple", True)
+        for item in tickers:
+            self.assertIsInstance(item, str)
+
+    def test_single_char_ticker(self):
+        # Single char should not crash and should return a string
+        distances, tickers, is_business = alignment.Helpers.get_alignments("a", False)
+        self.assertIsInstance(distances, str)
+        self.assertIsInstance(tickers, str)
+
+    def test_search_is_case_insensitive(self):
+        # Upper and lower case input should return same results
+        _, tickers_lower, _ = alignment.Helpers.get_alignments("aapl", False)
+        _, tickers_upper, _ = alignment.Helpers.get_alignments("AAPL", False)
+        self.assertEqual(tickers_lower, tickers_upper)
+
 
 if __name__ == "__main__":
     unittest.main()
