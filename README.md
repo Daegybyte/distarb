@@ -1,73 +1,75 @@
-# Diego's Capstone Project MSD 2022
+# Distance Arbitrage (Distarb)
 
-## Distance Arbitrage aka Distarb
+[![Code Quality](https://github.com/Daegybyte/distarb/actions/workflows/lint.yml/badge.svg)](https://github.com/Daegybyte/distarb/actions/workflows/lint.yml)
 
-## [License](https://github.com/Daegybyte/distarb/blob/main/LICENSE)
+A Python desktop application that ranks stock ticker symbols and company names by
+keyboard-layout-aware edit distance. Built as a capstone project for the University of Utah Master
+of Software Engineering program.
 
-## Deliverables:
-	
-* ### [Paper](https://github.com/Daegybyte/distarb/tree/main/paper/)
+## Overview
 
-* ### [Presentation](https://youtu.be/1874lj_r0Ko)
+Distarb explores the idea that typos in stock ticker searches are not random — they are influenced
+by the physical proximity of keys on a keyboard. The app combines string edit distance with QWERTY
+key-distance weighting to surface the most likely intended ticker or company name from a potentially
+mistyped input.
 
-* ### [Release](https://github.com/Daegybyte/distarb/releases)
+It also includes an SEC congressional trading disclosure scraper, allowing users to explore recent
+stock transactions made by U.S. senators.
 
+## Features
 
-## Instructions:
+- Keyboard-weighted edit distance ranking of ticker symbols
+- Company name fuzzy search using cleaned string matching
+- SEC congressional trading disclosure scraper
+- Interactive PyQt5 GUI with live graph output via PyQtGraph
+- 28 unit tests with CI via GitHub Actions
 
-In the program window, select the radio button for what functionality you are interested in. 
+## Tech Stack
 
-The default button on the left is to figure out the edit distance using the distance calculating algorithm. The results will be ranked by edit and physical distance. 
+Python, PyQt5, PyQtGraph, pandas, yfinance, BeautifulSoup, pendulum, clavier (vendored)
 
-The two dropdowns at the top allow you to select a company by either its company name, or its ticker name. The right radio button activates the webscraper.
+## Getting Started
 
-![app](app_screen.png)
+Recommended: use the provided conda environment.
 
-### Why doesn't this work?
+    conda create -n distarb python=3.9.15
+    conda activate distarb
+    python -m pip install -r requirements.txt
+    python app/main.py
 
+Or run directly if dependencies are already installed:
 
-#### In the event the executable fails:
- try:
- 
- - Right clicking the application and clicking run. This will circumvent Apple trying to protect you from unidentified developers.
+    python app/main.py
 
-#### If that fails:
+macOS note: if a packaged .app release fails to open, right-click and select Open, or run from
+terminal:
 
- - In your terminal, navigate to where you see '`distarb.app`' and run the script: 
- 
- 		$bash distarb.app/Contents/MacOS/distarb
- 
-It is worth noting that this may be necessary to get the webscraper to work.
- 
- 
-#### If all of the above fails:
+    bash distarb.app/Contents/MacOS/distarb
 
-1. Get [Anaconda](https://anaconda.org/).
+## Running Tests
 
-2. A `.yml` of the conda environement to run the application can be found [here](https://anaconda.org/daegybyte/distarb).
+    python -m pytest app/tests.py -v
 
-	recreate the environment with:
-	
-		$conda env create --file distarb.yml
-
-3. Download [Source Code Zip](https://github.com/Daegybyte/distarb/releases/tag/v1.1.1) from my repo.
-
-4. Follow [this walkthrough](https://dschreij.github.io/how-to/package-anaconda-environments-as-apps) walkthrough to create your own exectuable. 
-
-## Class diagram:
+## Class Diagram
 
 ![diagram](distance_arbitrage.drawio.png)
 
-### Bug Reporting:
+## App Screenshot
 
-Please report all bugs to [@elonmusk](https://twitter.com/elonmusk/with_replies?lang=en) on Twitter.
+![app](app_screen.png)
 
-### Miscellaneous:
+## Deliverables
 
+- [Research Paper](https://github.com/Daegybyte/distarb/tree/main/paper/)
+- [Presentation](https://youtu.be/1874lj_r0Ko)
+- [Release](https://github.com/Daegybyte/distarb/releases)
 
-#### [app/](https://github.com/Daegybyte/distarb/tree/main/app)
+## License
 
-* Contains copies of the source code in `distarb.app/Contents/Resources/app/`.
+[MIT](https://github.com/Daegybyte/distarb/blob/main/LICENSE)
 
- 
-#### No animals were harmed in the making of this program. However, [one particularly happy corgi named Doc](https://www.youtube.com/watch?v=dQw4w9WgXcQ) received heaps of treats from the treat jar on my desk. As a result, he is becoming a bit of a chunk. 
+---
+
+No animals were harmed in the making of this program. However,
+[one particularly happy corgi named Doc](https://www.youtube.com/watch?v=dQw4w9WgXcQ) received heaps
+of treats from the treat jar on my desk. As a result, he is becoming a bit of a chunk.
