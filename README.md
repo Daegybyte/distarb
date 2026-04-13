@@ -1,7 +1,7 @@
 # Distance Arbitrage (Distarb)
 
 [![Lint](https://github.com/Daegybyte/distarb/actions/workflows/lint.yml/badge.svg)](https://github.com/Daegybyte/distarb/actions/workflows/lint.yml)
-[![Ruff](https://github.com/Daegybyte/distarb/actions/workflows/ruff.yml/badge.svg)](https://github.com/Daegybyte/distarb/actions/workflows/ruff.yml)
+[![Ruff](https://github.com/Daegybyte/distarb/actions/workflows/format.yml/badge.svg)](https://github.com/Daegybyte/distarb/actions/workflows/format.yml)
 [![Tests](https://github.com/Daegybyte/distarb/actions/workflows/test.yml/badge.svg)](https://github.com/Daegybyte/distarb/actions/workflows/test.yml)
 
 A Python desktop application that ranks stock ticker symbols and company names by
