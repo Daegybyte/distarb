@@ -1,0 +1,11 @@
+[run]
+omit =
+    app/main.py
+    app/graph_helpers.py
+    app/clavier/*
+    app/migrate.py
+    app/tests.py
+
+[report]
+exclude_lines =
+    if __name__ == "__main__":

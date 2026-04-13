@@ -1,4 +1,4 @@
-name: Lint
+name: Tests
 
 on:
   push:
@@ -7,8 +7,11 @@ on:
     branches: ["main"]
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
+
+    env:
+      QT_QPA_PLATFORM: offscreen
 
     steps:
       - uses: actions/checkout@v4
@@ -21,7 +24,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install ruff
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
 
-      - name: Lint (ruff)
-        run: ruff check app/
+      - name: Run tests
+        run: pytest app/tests.py -v --cov=app --cov-report=term-missing

@@ -9,3 +9,4 @@ yfinance==0.1.87
 clavier_lib
 pendulum==2.1.2
 regex==2022.7.9
+pytest-cov
